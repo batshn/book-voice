@@ -1,0 +1,110 @@
+/* ===== GLOBAL KID-FRIENDLY BACKGROUND ===== */
+body {
+  margin: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+
+  /* Soft fun gradient */
+  background: linear-gradient(
+    135deg,
+    #ffe5ec 0%,
+    #e0f7ff 40%,
+    #e8ffe5 100%
+  );
+  background-attachment: fixed;
+
+  color: #222;
+}
+
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ===== TITLE ===== */
+h1 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #333;
+
+  /* A soft shadow for fun */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.15);
+}
+
+p {
+  color: #555;
+  margin-top: 0;
+}
+
+/* ===== SEARCH BAR ===== */
+.searchbar input {
+  padding: 14px;
+  border-radius: 14px;
+  border: 2px solid #aac7ff;
+  font-size: 18px;
+  outline: none;
+  background: #ffffff;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+
+  /* More kid-friendly bigger field */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.searchbar input:focus {
+  border-color: #4f7cff;
+  box-shadow: 0 0 0 4px rgba(79, 124, 255, 0.25);
+}
+
+.searchbar button {
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  background: #4f7cff;
+  color: white;
+  font-weight: 600;
+  transition: 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.10);
+}
+
+.searchbar button:hover {
+  background: #3b63d6;
+  transform: translateY(-2px);
+}
+
+/* ===== GRID ===== */
+/* ===== GRID ===== */
+.grid {
+  margin-top: 20px;
+}
+
+/* ===== CATEGORY CARD ===== */
+.category-card {
+  background: white;
+  border-radius: 18px;
+  padding: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #e8ecf3;
+}
+
+.category-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.category-card img {
+  max-height: 110px;
+  object-fit: contain;
+}
+
+.category-card-name {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+}
